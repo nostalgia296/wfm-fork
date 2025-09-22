@@ -46,7 +46,7 @@
 #define IDC_STATIC -1
 #endif
 
-#define APP_NAME L"Winlator File Manager"
+#define APP_NAME L"Winlator文件管理器"
 #define APP_VERSION L"1.5"
 #define APP_DEV_NAME L"BrunoSX"
 
