@@ -1,5 +1,5 @@
-#ifndef STRINGS_EN_H
-#define STRINGS_EN_H
+#ifndef STRINGS_ZH_H
+#define STRINGS_ZH_H
 
 #include "resource.h"
 
@@ -60,9 +60,9 @@ static inline void loadStrings_zh() {
     lc_str.confirm_exit = L"确认退出";
     lc_str.search = L"搜索";
     lc_str.up = L"向上";
-    
+
     lc_str.fmt_file = L"%ls 文件";
-    
+
     lc_str.msg_invalid_iso_image_file = L"无效iso镜像!";
     lc_str.msg_deleting_files = L"删除中，请等待...";
     lc_str.msg_copying_files = L"复制中，请等待...";

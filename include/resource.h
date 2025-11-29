@@ -133,6 +133,12 @@ extern struct LC_STR lc_str;
 
 #define STARTS_WITH(a, b) (a[0] == b[0] && a[1] == b[1])
 
+// Forward declarations for loadStrings functions (needed due to circular dependency)
+static inline void loadStrings_en();
+static inline void loadStrings_pt();
+static inline void loadStrings_ru();
+static inline void loadStrings_zh();
+
 static inline void loadLCStrings(wchar_t* localeName) {
     if (STARTS_WITH(localeName, L"pt")) {
         loadStrings_pt();
