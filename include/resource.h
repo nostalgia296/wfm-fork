@@ -129,6 +129,7 @@ extern struct LC_STR lc_str;
 #include "locale/strings_en.h"
 #include "locale/strings_pt.h"
 #include "locale/strings_ru.h"
+#include "locale/strings_zh.h"
 
 #define STARTS_WITH(a, b) (a[0] == b[0] && a[1] == b[1])
 
@@ -139,7 +140,12 @@ static inline void loadLCStrings(wchar_t* localeName) {
     else if (STARTS_WITH(localeName, L"ru")) {
         loadStrings_ru();
     }    
-    else loadStrings_en();
+    else if (STARTS_WITH(localeName, L"zh")) {
+        loadStrings_zh();
+    } else {
+        loadStrings_en();
+    }
+    
 }
 
 #undef STARTS_WITH
